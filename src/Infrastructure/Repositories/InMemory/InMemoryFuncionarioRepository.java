@@ -1,5 +1,7 @@
 package Infrastructure.Repositories.InMemory;
 
-public class InMemoryFuncionarioRepository {
+import Domain.Repositories.IFuncionarioRepository;
+
+public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
     
 }
