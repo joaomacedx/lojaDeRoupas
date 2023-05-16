@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>👕 Clothing Store 👕</h1>
+   <h1>👔 Clothing Store 👔</h1>
    <img alt="Salvador University" src="./assets/unifacsLogo.png" />
    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/joaomacedx/lojaDeRoupas?style=flat" >
    <img alt="Made by João Macêdo" src="https://img.shields.io/badge/made%20by-João%20Macêdo-blue">
