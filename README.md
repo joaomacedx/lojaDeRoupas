@@ -12,10 +12,12 @@
 context/theme of the system to be developed is freely chosen by the team.
 This project will be worth up to 10 points, which will be used to calculate the general average for the semester
 of this Curricular Unit.</p>
- </div>
-
+  <hr>
 <h3> 🛠 Technologies 🛠 </h3>
 This project was developed with the following technologies:
 
 - Java 
 - JUnit
+ </div>
+
+
