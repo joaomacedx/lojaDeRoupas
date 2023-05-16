@@ -18,7 +18,7 @@ of this Curricular Unit.</p>
    <h3> 🛠 Technologies 🛠 </h3>
    <p>This project was developed with the following technologies:</p>
 </div>
-<ul align="center">
+<ul>
   <li>Java</li>
   <li>JUnit</li>
 </ul>
