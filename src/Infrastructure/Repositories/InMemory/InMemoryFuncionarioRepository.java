@@ -20,8 +20,7 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
         throw new Error("Nao foi não encontrado nenhum cadastrado funcionario com o email" + email.enderecoDeEmail );
     }
     public void Save(Funcionario novoFuncionario) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Save'");
+       this.funcionariosInMemory.add(novoFuncionario);
     }
     public Funcionario findById(UUID idDoFuncionario) {
         // TODO Auto-generated method stub
