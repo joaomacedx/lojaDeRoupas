@@ -171,7 +171,7 @@ public class InMemoryFuncionarioRepositoryTest {
         InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
 
         //Act
-        Funcionario funcionarioExperado = inMemoryFuncionarios.findById(funcionarioAtual.Id);
+        inMemoryFuncionarios.findById(funcionarioAtual.Id);
         //Assert
         Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioAtual);
         assertEquals(containsFuncionario, false);
