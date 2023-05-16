@@ -1,5 +1,6 @@
 package Infrastructure.Repositories.InMemory;
 
+import java.util.List;
 import java.util.UUID;
 
 import Domain.Entities.Funcionario;
@@ -7,10 +8,16 @@ import Domain.Repositories.IFuncionarioRepository;
 import Domain.ValueObjects.Email;
 
 public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
+    public List<Funcionario> funcionariosInMemory;
 
+    public InMemoryFuncionarioRepository(List<Funcionario> funcionarios) {
+        this.funcionariosInMemory = funcionarios;
+    }
     public Funcionario findByEmail(Email email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findByEmail'");
+        for(Funcionario funcionarioEncontrado : this.funcionariosInMemory) {
+            if(funcionarioEncontrado.email.enderecoDeEmail.equals(email.enderecoDeEmail)) return funcionarioEncontrado;
+        }
+        throw new Error("Nao foi não encontrado nenhum cadastrado funcionario com o email" + email.enderecoDeEmail );
     }
     public void Save(Funcionario novoFuncionario) {
         // TODO Auto-generated method stub
