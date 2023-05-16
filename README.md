@@ -1,7 +1,7 @@
 <div align="center">
    <h1> Loja De Roupas </h1>
    <img alt="Salvador University" src="./assets/unifacsLogo.png" />
-  <p>Project referring to the work of completion of the subject Course materials Programming of computational solutions taught by <a href="https://github.com/arturKronbauer">Professor Artur Kronbauer</a>, at <a href="https://www.unifacs.br">Salvador University</a>.</p>
+  <p>Project referring to the work of completion of the subject Course materials Programming of computational solutions taught by <a href="https://github.com/arturKronbauer">Professor Artur Kronbauer</a>, at <a href="https://www.unifacs.br">Salvador University</a>. I used a layered architecture in this project, mixing Domain Driven Design (DDD) and Clean Architecture practices, in addition I developed using the concepts of Test Driven Development (TDD) and some Design Patterns.</p>
    <h3>General description</h3>
 <p>In this project, a system will be created with functionality for registering and managing records. O
 context/theme of the system to be developed is freely chosen by the team.
