@@ -20,6 +20,9 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
         throw new Error("Nao foi não encontrado nenhum cadastrado funcionario com o email" + email.enderecoDeEmail );
     }
     public void Save(Funcionario novoFuncionario) {
+       for(Funcionario funcionarioExiste : this.funcionariosInMemory) {
+            if(funcionarioExiste.equals(novoFuncionario)) throw new Error("Nao e possível salva um funcionario existente");
+       }
        this.funcionariosInMemory.add(novoFuncionario);
     }
     public Funcionario findById(UUID idDoFuncionario) {

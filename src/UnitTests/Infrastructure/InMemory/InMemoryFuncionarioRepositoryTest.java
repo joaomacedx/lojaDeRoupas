@@ -95,4 +95,30 @@ public class InMemoryFuncionarioRepositoryTest {
         Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioAtual);
         assertEquals(containsFuncionario, true);
     }
+    @Test(expected = Error.class)
+    public void save_com_error_QUANDO_argumentos_o_funcionario_existe_ENTAO_retorna_um_Error() {
+        //Arrange
+        UUID id = UUID.randomUUID();
+        String nomeDoFuncionario = "Gabriel";
+        String sobrenomeDoFuncionario = "Macedo";
+        String telefone = "12345678";
+        String email = "joaomacedo1234@email.com";
+        String ruaOndeFuncionarioMora = "Rua das babilonia";
+        String cepDaRuaDoFuncionario = "987654321";
+        Cargo cargoDoFuncionario = Cargo.Gerente;
+        Funcionario funcionarioAtual = new Funcionario(id,
+             new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
+             cargoDoFuncionario, new Email(email), new NumeroDeTelefone(telefone),
+             new Endereco(ruaOndeFuncionarioMora,
+             cepDaRuaDoFuncionario));
+        List<Funcionario> funcionarios = new ArrayList<Funcionario>();
+        funcionarios.add(funcionarioAtual);
+        InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
+
+        //Act
+        inMemoryFuncionarios.Save(funcionarioAtual);
+        //Assert
+        Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioAtual);
+        assertEquals(containsFuncionario, true);
+    }
 }
