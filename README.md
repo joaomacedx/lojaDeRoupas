@@ -14,11 +14,12 @@ This project will be worth up to 10 points, which will be used to calculate the 
 of this Curricular Unit.</p>
   <hr>
  </div>
- 
-<h3> 🛠 Technologies 🛠 </h3>
-This project was developed with the following technologies:
-<ol>
+ <div align="center">
+   <h3> 🛠 Technologies 🛠 </h3>
+   <p>This project was developed with the following technologies:</p>
+</div>
+<ul>
   <li>Java</li>
   <li>JUnit</li>
-</ol>
+</ul>
 
