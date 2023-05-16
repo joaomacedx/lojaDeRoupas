@@ -17,10 +17,12 @@ public class FuncionarioFactoryTest {
         String cepDaRuaDoFuncionario = "987654321";
         Cargo cargoDoFuncionario = Cargo.Gerente;
         FuncionarioFactory funcionarioFactory = new FuncionarioFactory();
+
         //Act
         Funcionario funcionarioAtual = funcionarioFactory.criarNovoFuncionario(nomeDoFuncionario, sobrenomeDoFuncionario,
              telefone, email, ruaOndeFuncionarioMora,
               cepDaRuaDoFuncionario, cargoDoFuncionario);
+              
         //Assert
         Funcionario funcionarioEsperado = new Funcionario(funcionarioAtual.Id,
              new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
