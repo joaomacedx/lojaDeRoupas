@@ -8,7 +8,6 @@
    <hr>
    <h2>General description</h2>
 <p>This project aims to represent a registration system for a clothing store.</p>
-  <hr>
  </div>
  <div align="center">
    <h3> 🛠 Technologies 🛠 </h3>
