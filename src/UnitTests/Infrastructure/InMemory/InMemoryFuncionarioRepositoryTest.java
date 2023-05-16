@@ -17,7 +17,7 @@ import Infrastructure.Repositories.InMemory.InMemoryFuncionarioRepository;
 public class InMemoryFuncionarioRepositoryTest {
     
     @Test
-    public void findById_com_sucesso_QUANDO_argumentos_passados_sao_validos_ENTAO_retorna_instancia_de_Funcionario() {
+    public void findByEmail_com_sucesso_QUANDO_argumentos_passados_sao_validos_ENTAO_retorna_instancia_de_Funcionario() {
         //Arrange 
         UUID id = UUID.randomUUID();
         String nomeDoFuncionario = "Gabriel";
