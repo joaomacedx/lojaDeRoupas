@@ -93,6 +93,6 @@ public class InMemoryFuncionarioRepositoryTest {
         inMemoryFuncionarios.Save(funcionarioAtual);
         //Assert
         Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioAtual);
-        containsFuncionario.equals(true);
+        assertEquals(containsFuncionario, true);
     }
 }
