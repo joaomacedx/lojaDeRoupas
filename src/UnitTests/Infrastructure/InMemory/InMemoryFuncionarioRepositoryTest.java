@@ -121,4 +121,28 @@ public class InMemoryFuncionarioRepositoryTest {
         Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioAtual);
         assertEquals(containsFuncionario, true);
     }
+    @Test
+    public void findById_com_sucesso_QUANDO_argumentos_passados_sao_validos_ENTAO_retorna_instancia_de_Funcionario() {
+        //Arrange
+        UUID id = UUID.randomUUID();
+        String nomeDoFuncionario = "Gabriel";
+        String sobrenomeDoFuncionario = "Macedo";
+        String telefone = "12345678";
+        String email = "joaomacedo1234@email.com";
+        String ruaOndeFuncionarioMora = "Rua das babilonia";
+        String cepDaRuaDoFuncionario = "987654321";
+        Cargo cargoDoFuncionario = Cargo.Gerente;
+        Funcionario funcionarioAtual = new Funcionario(id,
+             new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
+             cargoDoFuncionario, new Email(email), new NumeroDeTelefone(telefone),
+             new Endereco(ruaOndeFuncionarioMora,
+             cepDaRuaDoFuncionario));
+        List<Funcionario> funcionarios = new ArrayList<Funcionario>();
+        funcionarios.add(funcionarioAtual);
+        InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
+        //Act
+        Funcionario funcionarioExperado = inMemoryFuncionarios.findById(funcionarioAtual.Id);
+        //Assert
+        assertEquals(funcionarioExperado,funcionarioAtual);
+    }
 }

@@ -17,7 +17,7 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
         for(Funcionario funcionarioEncontrado : this.funcionariosInMemory) {
             if(funcionarioEncontrado.email.enderecoDeEmail.equals(email.enderecoDeEmail)) return funcionarioEncontrado;
         }
-        throw new Error("Nao foi não encontrado nenhum cadastrado funcionario com o email" + email.enderecoDeEmail );
+        throw new Error("Nao foi encontrado nenhum cadastrado funcionario com o email" + email.enderecoDeEmail );
     }
     public void Save(Funcionario novoFuncionario) {
        for(Funcionario funcionarioExiste : this.funcionariosInMemory) {
@@ -26,8 +26,10 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
        this.funcionariosInMemory.add(novoFuncionario);
     }
     public Funcionario findById(UUID idDoFuncionario) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+        for(Funcionario funcionarioEncontrado : this.funcionariosInMemory) {
+            if(funcionarioEncontrado.Id.equals(idDoFuncionario)) return funcionarioEncontrado;
+        }
+        throw new Error("Nao foi encontrado nenhum funcionario com o id" + idDoFuncionario);
     }
     public void Delete(Funcionario funcionarioParaDeletar) {
         // TODO Auto-generated method stub
