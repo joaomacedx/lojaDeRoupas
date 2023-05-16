@@ -14,8 +14,9 @@
    <h3> 🛠 Technologies 🛠 </h3>
    <p>This project was developed with the following technologies:</p>
 </div>
-<ul>
-  <li>Java</li>
-  <li>JUnit</li>
+
+<ul style="list-style: none;" align="center">
+  <li>- Java</li>
+  <li>- JUnit</li>
 </ul>
 
