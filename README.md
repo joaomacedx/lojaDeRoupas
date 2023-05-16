@@ -10,12 +10,9 @@
 <p>This project aims to represent a registration system for a clothing store.</p>
  </div>
  <hr>
- <div align="center">
-   <h3> 🛠 Technologies 🛠 </h3>
-   <p>This project was developed with the following technologies:</p>
-</div>
-
-<ul style="list-style: none;" align="center">
+ <h3> 🛠 Technologies 🛠 </h3>
+ <p>This project was developed with the following technologies:</p>
+<ul style="list-style: none;">
   <li>- Java</li>
   <li>- JUnit</li>
 </ul>
