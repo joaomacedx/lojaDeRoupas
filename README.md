@@ -7,11 +7,7 @@
   <p>Project referring to the work of completion of the subject Course materials Programming of computational solutions taught by <a href="https://github.com/arturKronbauer">Professor Artur Kronbauer</a>, at <a href="https://www.unifacs.br">Salvador University</a>. I used a layered architecture in this project, mixing Domain Driven Design (DDD) and Clean Architecture practices, in addition I developed using the concepts of Test Driven Development (TDD) and some Design Patterns.</p>
    <hr>
    <h2>General description</h2>
-   
-<p>In this project, a system will be created with functionality for registering and managing records. O
-context/theme of the system to be developed is freely chosen by the team.
-This project will be worth up to 10 points, which will be used to calculate the general average for the semester
-of this Curricular Unit.</p>
+<p>This project aims to represent a registration system for a clothing store.</p>
   <hr>
  </div>
  <div align="center">
