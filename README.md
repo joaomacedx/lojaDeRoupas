@@ -16,8 +16,8 @@ of this Curricular Unit.</p>
 <h3> 🛠 Technologies 🛠 </h3>
 This project was developed with the following technologies:
 
-- Java 
-- JUnit
+-> Java 
+-> JUnit
  </div>
 
 
