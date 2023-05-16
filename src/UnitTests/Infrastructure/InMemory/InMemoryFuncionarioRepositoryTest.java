@@ -1,9 +1,12 @@
 package UnitTests.Infrastructure.InMemory;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import Domain.Entities.Funcionario;
@@ -65,6 +68,7 @@ public class InMemoryFuncionarioRepositoryTest {
         Funcionario funcionarioExperado = inMemoryFuncionarios.findByEmail(novofuncionario.email);
         
         //Assert
-        inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioExperado);
+        Boolean contaisFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioExperado);
+        assertEquals(contaisFuncionario, false);
     }
 }
