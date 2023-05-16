@@ -42,4 +42,29 @@ public class InMemoryFuncionarioRepositoryTest {
         //Assert
         funcionarioAtual.equals(funcionarioEsperado);
     }
+    @Test(expected = Error.class)
+    public void findByEmail_com_Error_QUANDO_argumentos_passados_sao_invalidos_ENTAO_retorna_um_error() {
+        //Arrange 
+        UUID id = UUID.randomUUID();
+        String nomeDoFuncionario = "Gabriel";
+        String sobrenomeDoFuncionario = "Macedo";
+        String telefone = "12345678";
+        String email = "joaomacedo1234@email.com";
+        String ruaOndeFuncionarioMora = "Rua das babilonia";
+        String cepDaRuaDoFuncionario = "987654321";
+        Cargo cargoDoFuncionario = Cargo.Gerente;
+        Funcionario novofuncionario = new Funcionario(id,
+             new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
+             cargoDoFuncionario, new Email(email), new NumeroDeTelefone(telefone),
+             new Endereco(ruaOndeFuncionarioMora,
+             cepDaRuaDoFuncionario));
+        List<Funcionario> funcionarios = new ArrayList<Funcionario>();
+        InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
+
+        //Act
+        Funcionario funcionarioExperado = inMemoryFuncionarios.findByEmail(novofuncionario.email);
+        
+        //Assert
+        inMemoryFuncionarios.funcionariosInMemory.contains(funcionarioExperado);
+    }
 }
