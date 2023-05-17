@@ -222,11 +222,10 @@ public class InMemoryFuncionarioRepositoryTest {
         List<Funcionario> funcionarios = new ArrayList<Funcionario>();
         funcionarios.add(funcionario);
         InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
-
         //Act
         inMemoryFuncionarios.Delete(funcionario);
         //Assert
         Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionario);
-        assertEquals(containsFuncionario, false);
+        assertEquals(false, containsFuncionario);
     }
 }

@@ -32,10 +32,7 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
         throw new Error("Nao foi encontrado nenhum funcionario com o id" + idDoFuncionario);
     }
     public void Delete(Funcionario funcionarioParaDeletar) {
-        for(Funcionario funcionario : this.funcionariosInMemory) {
-            if(funcionario.equals(funcionarioParaDeletar)) this.funcionariosInMemory.remove(funcionarioParaDeletar);
-        }
-        throw new Error("Nao foi possivel deletar o funcionario, porque ele nao foi encontrado");
+        this.funcionariosInMemory.removeIf(funcionario -> funcionario.Id == funcionarioParaDeletar.Id);        
     }
-    
 }
+
