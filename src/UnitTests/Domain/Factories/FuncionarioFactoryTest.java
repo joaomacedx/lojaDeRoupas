@@ -17,7 +17,7 @@ public class FuncionarioFactoryTest {
         String email = "joaomacedo1234@email.com";
         String ruaOndeFuncionarioMora = "Rua das babilonia";
         String cepDaRuaDoFuncionario = "987654321";
-        Cargo cargoDoFuncionario = Cargo.Gerente;
+        String cargoDoFuncionario = "Gerente";
         FuncionarioFactory funcionarioFactory = new FuncionarioFactory();
 
         //Act
@@ -28,7 +28,7 @@ public class FuncionarioFactoryTest {
         //Assert
         Funcionario funcionarioEsperado = new Funcionario(funcionarioAtual.Id,
              new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
-             cargoDoFuncionario, new Email(email), new NumeroDeTelefone(telefone),
+             Cargo.Gerente, new Email(email), new NumeroDeTelefone(telefone),
               new Endereco(ruaOndeFuncionarioMora,
                cepDaRuaDoFuncionario));
         funcionarioAtual.equals(funcionarioEsperado);
@@ -44,7 +44,7 @@ public class FuncionarioFactoryTest {
         String email = "joaomacedo1234@email.com";
         String ruaOndeFuncionarioMora = "Rua das babilonia";
         String cepDaRuaDoFuncionario = "987654321";
-        Cargo cargoDoFuncionario = Cargo.Gerente;
+        String cargoDoFuncionario = "Gerente";
         FuncionarioFactory funcionarioFactory = new FuncionarioFactory();
 
         //Act
@@ -55,7 +55,7 @@ public class FuncionarioFactoryTest {
         //Assert
         Funcionario funcionarioEsperado = new Funcionario(funcionarioAtual.Id,
              new Nome(nomeDoFuncionario, sobrenomeDoFuncionario),
-             cargoDoFuncionario, new Email(email), new NumeroDeTelefone(telefone),
+             Cargo.Gerente, new Email(email), new NumeroDeTelefone(telefone),
               new Endereco(ruaOndeFuncionarioMora,
                cepDaRuaDoFuncionario));
         funcionarioAtual.equals(funcionarioEsperado);

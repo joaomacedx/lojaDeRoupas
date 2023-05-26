@@ -35,5 +35,8 @@ public class InMemoryFuncionarioRepository implements IFuncionarioRepository {
         if(!this.funcionariosInMemory.removeIf(funcionario -> funcionario.Id == funcionarioParaDeletar.Id)) 
             throw new Error("Nao e possivel deletar um funcionario inexistente");       
     }
+    public List<Funcionario> List() {
+       return this.funcionariosInMemory;
+    }
 }
 
