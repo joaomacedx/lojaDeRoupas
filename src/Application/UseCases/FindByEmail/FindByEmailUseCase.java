@@ -9,7 +9,7 @@ import Domain.ValueObjects.Email;
 public class FindByEmailUseCase {
     private IFuncionarioRepository funcionarioRepository; 
     public FindByEmailUseCase(IFuncionarioRepository funcionarioRepository) {
-        this.funcionarioRepository = this.funcionarioRepository;
+        funcionarioRepository = this.funcionarioRepository;
     }
 
     public FuncionarioFoundDTO execute(FuncionarioEmailDTO emailDTO) {

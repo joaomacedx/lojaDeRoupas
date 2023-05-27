@@ -31,7 +31,8 @@ public class Programa {
     private static Scanner scanner;
     private static FindByEmailController findByEmailController;
     private static FindByEmailUseCase findByEmailUseCase;
-    public static void main(String[] args) throws Exception {
+    public void init() {
+        initFuncionarioPatterns();
         System.out.println("----------------------------------------------------------------------------------------\n");
         System.out.println("Bem-vindo ao Sistema de Cadastro da nossa Loja de roupas\n");
         System.out.println("-----------------------------------------------------------------------------------------\n");
@@ -39,12 +40,73 @@ public class Programa {
         System.out.println("Listar os funcionarios cadastrados - 1\n");
         System.out.println("Cadastrar um funcionario - 2\n");
         System.out.println("Buscar um funcionario pelo email - 3\n");
+        System.out.println("Sair - 4\n");
         System.out.println("----------------------------------------------------------------------------------------\n");
         System.out.println("Digite o número da opção desejada:\n");
-        initFuncionarioPatterns();
-        menuCadastrarFuncionario();
-        menuListarFuncionarios();
-        buscarFuncionario();
+        Integer opcaoDesejada = scanner.nextInt();
+        switch(opcaoDesejada) {
+            case 1:
+                menuListarFuncionarios();
+                digiteAOpcaoDesejada();
+            case 2:
+                menuCadastrarFuncionario();
+                digiteAOpcaoDesejada();
+            case 3: 
+                buscarFuncionario();
+                digiteAOpcaoDesejada();
+            case 4:
+                sair();
+            case 5:
+                voltar();
+                digiteAOpcaoDesejada();
+        }
+    }
+    public static void casesMenu() {
+        digiteAOpcaoDesejada();
+        Integer opcaoDesejada = scanner.nextInt();
+        switch(opcaoDesejada) {
+            case 1:
+                menuListarFuncionarios();
+                digiteAOpcaoDesejada();
+            case 2:
+                menuCadastrarFuncionario();
+                digiteAOpcaoDesejada();
+            case 3: 
+                buscarFuncionario();
+                digiteAOpcaoDesejada();
+            case 4:
+                sair();
+            case 5:
+                voltar();
+                digiteAOpcaoDesejada();
+        }
+        
+    }
+    public static void digiteAOpcaoDesejada() {
+        System.out.println("Digite o número da opção desejada:\n");
+        System.out.println("1 - Listar os funcionarios cadastrados\n");
+        System.out.println("2 - Cadastrar um funcionario\n");
+        System.out.println("3 - Buscar um funcionario pelo email\n");
+        System.out.println("4 - Voltar para o menu anterior\n");
+        voltar();
+    }
+    public static void menu() {
+        System.out.println("----------------------------------------------------------------------------------------\n");
+        System.out.println("Bem-vindo ao Sistema de Cadastro da nossa Loja de roupas\n");
+        System.out.println("-----------------------------------------------------------------------------------------\n");
+        System.out.println("Atualmente o nosso sistema e capaz de efetuar as seguintes operaçoes para os funcionarios\n");
+        System.out.println("Listar os funcionarios cadastrados - 1\n");
+        System.out.println("Cadastrar um funcionario - 2\n");
+        System.out.println("Buscar um funcionario pelo email - 3\n");
+        System.out.println("Sair - 4\n");
+        System.out.println("----------------------------------------------------------------------------------------\n");
+        System.out.println("Digite o número da opção desejada:\n");
+    }
+    public static void voltar() {
+        menu();
+    }
+    public static void sair() {
+        System.exit(0);
     }
     public static void initFuncionarioPatterns() {
         scanner = new Scanner(System.in);
@@ -126,4 +188,5 @@ public class Programa {
         funcionariosPreCadastrados.add(funcionarioSete);
         funcionarioRepository = new InMemoryFuncionarioRepository(funcionariosPreCadastrados);
     }
-}
+        
+    }

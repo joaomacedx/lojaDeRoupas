@@ -22,5 +22,6 @@ public class FindByEmailController {
         System.out.println("Email: " + funcionarioEncontradoDTO.enderecoDeEmail + "\n");
         System.out.println("Telefone: " + funcionarioEncontradoDTO.numeroDeTelefone + "\n");
         System.out.println("\n--------------------------------------------\n");
+        scanner.close();
     }
 }

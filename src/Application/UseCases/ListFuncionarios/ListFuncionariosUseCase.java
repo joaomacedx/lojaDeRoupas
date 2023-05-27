@@ -3,7 +3,6 @@ package Application.UseCases.ListFuncionarios;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.FocusManager;
 
 import Application.DataTransferObjects.FuncionarioListDTO;
 import Domain.Entities.Funcionario;

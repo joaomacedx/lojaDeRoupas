@@ -28,5 +28,6 @@ public class CreateFuncionarioController {
         String cep = scanner.nextLine();
         FuncionarioDTO dto = new FuncionarioDTO(email, nome, sobrenome, numeroDeTelefone, rua, cep, cargo);
         this.funcionarioUseCase.execute(dto);
+        scanner.close();
     }
 }
