@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: joaom
+Build-Jdk: Oracle OpenJDK version 19.0.2
+Main-Class: br.com.lojaDeRoupas.WebAPI.Main
+Class-Path: lib/Application-1.0.0.jar lib/Domain-1.0.0.jar lib/spring-bo
+ ot-maven-plugin-3.1.0.jar lib/spring-context-6.0.9.jar lib/spring-aop-6
+ .0.9.jar lib/spring-expression-6.0.9.jar lib/spring-boot-buildpack-plat
+ form-3.1.0.jar lib/jackson-databind-2.14.2.jar lib/jackson-annotations-
+ 2.14.2.jar lib/jackson-core-2.14.2.jar lib/jackson-module-parameter-nam
+ es-2.14.2.jar lib/jna-platform-5.7.0.jar lib/jna-5.7.0.jar lib/commons-
+ compress-1.21.jar lib/httpclient5-5.2.1.jar lib/httpcore5-5.2.jar lib/h
+ ttpcore5-h2-5.2.jar lib/tomlj-1.0.0.jar lib/antlr4-runtime-4.7.2.jar li
+ b/jsr305-3.0.2.jar lib/spring-boot-loader-tools-3.1.0.jar lib/plexus-bu
+ ild-api-0.0.7.jar lib/plexus-utils-1.5.8.jar lib/spring-boot-devtools-3
+ .1.0.jar lib/spring-boot-3.1.0.jar lib/lombok-1.18.26.jar lib/slf4j-api
+ -1.7.36.jar lib/spring-core-6.0.9.jar lib/spring-jcl-6.0.9.jar lib/spri
+ ng-boot-autoconfigure-3.1.0.jar lib/spring-web-6.0.6.jar lib/spring-bea
+ ns-6.0.6.jar lib/micrometer-observation-1.10.4.jar lib/micrometer-commo
+ ns-1.10.4.jar
+

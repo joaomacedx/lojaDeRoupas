@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/WebAPI/WebAPI.iml" filepath="$PROJECT_DIR$/src/WebAPI/WebAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lojaDeRoupas.iml" filepath="$PROJECT_DIR$/lojaDeRoupas.iml" />
     </modules>
   </component>
 </project>
