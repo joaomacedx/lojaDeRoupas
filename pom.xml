@@ -8,6 +8,24 @@
   <artifactId>lojaDeRoupas</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
+  <name>lojaDeRupas</name>
+  <description>Project referring to the work of completion of the subject Course materials Programming of computational solutions taught by Teacher Artur Kronbauer, at Salvador University in the period 2023.01 </description>
+  <url>https://github.com/joaomacedx/lojaDeRoupas</url>
+
+  <issueManagement>
+    <url>https://github.com/joaomacedx/lojaDeRoupas/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <developers>
+    <developer>
+      <email>joaomacedx@gmail.com</email>
+      <name>João Macêdo</name>
+      <url>https://github.com/joaomacedx</url>
+      <id>joaomacedx</id>
+    </developer>
+  </developers>
+
   <modules>
     <module>src/Infrastructure</module>
     <module>src/Application</module>
