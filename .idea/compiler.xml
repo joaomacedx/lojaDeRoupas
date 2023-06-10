@@ -8,9 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Infrastructure" />
-        <module name="Domain" />
         <module name="Presentation" />
-        <module name="WebAPI" />
+        <module name="Domain" />
         <module name="Application" />
       </profile>
     </annotationProcessing>
@@ -20,8 +19,6 @@
       <module name="Application" options="" />
       <module name="Domain" options="" />
       <module name="Infrastructure" options="" />
-      <module name="Presentation" options="" />
-      <module name="WebAPI" options="" />
       <module name="lojaDeRoupas" options="" />
     </option>
   </component>
