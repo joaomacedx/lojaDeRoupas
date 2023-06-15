@@ -15,5 +15,20 @@
 <ul style="list-style: none;">
   <li>Java 17</li>
   <li>JUnit 4.13.2</li>
+  <li>Maven 3.9.2</li>
 </ul>
 
+1. Clone the repository
+```
+$ git clone https://github.com/joaomacedx/lojaDeRoupas.git
+```
+
+2. Check into the cloned repository
+```
+$ cd lojaDeRoupas
+```
+
+3. Install the dependencies and package the application
+```
+$ mvn package
+```
