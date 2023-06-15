@@ -27,10 +27,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Clean with Maven
+    - name: Clean
       run: mvn clean
-    - name: Build with Maven
+    - name: Build 
       run: mvn -B package --file pom.xml
+    - name: Test
+      run: mvn test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
