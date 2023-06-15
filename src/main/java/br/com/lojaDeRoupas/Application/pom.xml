@@ -12,6 +12,7 @@
             <groupId>br.com.lojaDeRoupas.Domain</groupId>
             <artifactId>Domain</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
