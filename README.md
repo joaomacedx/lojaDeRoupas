@@ -32,3 +32,8 @@ $ cd lojaDeRoupas
 ```
 $ mvn package
 ```
+4. Run application tests 
+```
+$ mvn test
+```
+
