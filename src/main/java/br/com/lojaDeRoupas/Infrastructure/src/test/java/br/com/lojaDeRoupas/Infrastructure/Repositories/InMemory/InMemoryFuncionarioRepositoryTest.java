@@ -1,4 +1,4 @@
-package br.com.lojaDeRoupas.Infrastructure.Testes.Repositories.InMemory;
+package br.com.lojaDeRoupas.Infrastructure.Repositories.InMemory;
 
 import br.com.lojaDeRoupas.Domain.Entities.Funcionario;
 import br.com.lojaDeRoupas.Domain.Exceptions.EntityAlreadyExistsException;
@@ -173,7 +173,7 @@ public class InMemoryFuncionarioRepositoryTest {
       assertEquals(containsFuncionario, false);
     }
     @Test(expected = EntityNotFoundException.class)
-    public void Delete_com_erro_QUANDO_funcionario_passado_nao_esta_cadastrado__ENTAO_estourar_uma_EntityNotFoundException() {
+    public void DeleteById_com_erro_QUANDO_funcionario_passado_nao_esta_cadastrado__ENTAO_estourar_uma_EntityNotFoundException() {
       //Arrange
 
       EntityId id = new EntityId(UUID.randomUUID());
@@ -193,13 +193,13 @@ public class InMemoryFuncionarioRepositoryTest {
       InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
 
       //Act
-      inMemoryFuncionarios.Delete(funcionario);
+      inMemoryFuncionarios.DeleteById(id);
       //Assert
       Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionario);
       assertEquals(containsFuncionario, false);
     }
     @Test
-    public void Delete_com_sucesso_QUANDO_funcionario_passado_esta_cadastrado_ENTAO_remove_funcionario_da_lista() {
+    public void DeleteById_com_sucesso_QUANDO_funcionario_passado_esta_cadastrado_ENTAO_remove_funcionario_da_lista() {
       //Arrange
 
       EntityId id = new EntityId(UUID.randomUUID());
@@ -219,7 +219,7 @@ public class InMemoryFuncionarioRepositoryTest {
       funcionarios.add(funcionario);
       InMemoryFuncionarioRepository inMemoryFuncionarios = new InMemoryFuncionarioRepository(funcionarios);
       //Act
-      inMemoryFuncionarios.Delete(funcionario);
+      inMemoryFuncionarios.DeleteById(id);
       //Assert
       Boolean containsFuncionario = inMemoryFuncionarios.funcionariosInMemory.contains(funcionario);
       assertEquals(false, containsFuncionario);

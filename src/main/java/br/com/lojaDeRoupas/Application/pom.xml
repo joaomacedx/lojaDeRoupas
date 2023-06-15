@@ -12,7 +12,12 @@
             <groupId>br.com.lojaDeRoupas.Domain</groupId>
             <artifactId>Domain</artifactId>
             <version>1.0.0</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -22,41 +27,5 @@
         <version>1.0.0</version>
         <relativePath>../../../../../../../pom.xml</relativePath>
     </parent>
-
-    <build>
-        <plugins>
-            <plugin>
-                <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>${project.groupId}.Main</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>br.com.lojaDeRoupas.Application.Tests.Main</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

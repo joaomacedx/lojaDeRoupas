@@ -9,7 +9,7 @@ import java.util.List;
 public interface IFuncionarioRepository {
   public Funcionario FindByEmail(Email email);
   public void Save(Funcionario novoFuncionario);
-  public Funcionario FindById(EntityId idDoFuncionario);
-  public void Delete(Funcionario funcionarioParaDeletar);
+  public Funcionario FindById(EntityId idFuncionarioToDelete);
+  public void DeleteById(EntityId idFuncionarioToDelete);
   public List<Funcionario> List();
 }
