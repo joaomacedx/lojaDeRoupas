@@ -18,9 +18,6 @@
   <li>Maven 3.9.2</li>
 </ul>
 
-[![Java CI with Maven](https://github.com/joaomacedx/lojaDeRoupas/actions/workflows/maven.yml/badge.svg)](https://github.com/joaomacedx/lojaDeRoupas/actions/workflows/maven.yml)
-
-
 1. Clone the repository
 ```
 $ git clone https://github.com/joaomacedx/lojaDeRoupas.git
@@ -39,4 +36,5 @@ $ mvn package
 ```
 $ mvn test
 ```
+[![Java CI with Maven](https://github.com/joaomacedx/lojaDeRoupas/actions/workflows/maven.yml/badge.svg)](https://github.com/joaomacedx/lojaDeRoupas/actions/workflows/maven.yml)
 
